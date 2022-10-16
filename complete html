@@ -1,0 +1,200 @@
+<!-- shortcut of basic template is "!+enter" -->
+<!DOCTYPE html> 
+<!--I am comment--> 
+<!-- shortcut of adding comment "ctrl+/"  -->
+<html lang="en">
+ <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is description">
+    <!-- for coming in search  -->
+    <meta name="keywords" content="html,ali.html,ali"/>
+    <meta name="robots" content="INDEX,FOLLOW"> 
+    <title>I am a title</title>
+    <!-- this is how you include external css -->
+    <link rel="stylesheet" href="ali.css">
+    <!-- this is how you include external java script -->
+    <script src="ali.js"></script>
+</head>
+<body>
+    <h1>Ali</h1>
+    <h2>Ali</h2> 
+    <h3>Ali</h3> 
+    <h4>Ali</h4>
+    <h5>Ali</h5>
+    <h6>Ali</h6>
+    <!-- lorem +integer(to add random words in paragram) -->
+    <!--from command pallet search ("toggle word wrap": for indexing of paragraphs)  -->
+    <!-- shortcut for command pallet is: "ctr+shift+p" -->
+    <!-- shortcut for adding paragraphs "p*number of paragraphs" -->
+    <!-- <strong> tag is used for bolding of letters -->
+    <!-- <em> tag is used for converting letters to italic -->
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, at, aperiam veniam sint error possimus inventore suscipit numquam tempore in a consequuntur voluptas deserunt neque aliquam iste <strong>This is strong</strong> pariatur eveniet autem, qui enim minus! Odit modi aperiam, placeat a cumque distinctio. ipsum dolor sit <em>this is emphasized</em> amet consectetur adipisicing elit. Ea, corrupti consequuntur aliquid suscipit quam placeat laudantium maxime magnam temporibus quia? Reiciendis error similique esse quas fugiat. Harum consequuntur laborum nam!</p>
+    <!-- <br> tag is for new line -->
+    <p>Lorem ipsum dolor sit amet. ipsum dolor<br> sit amet consect</p>
+    <!-- <hr> tag is used for inserting horizontal line -->
+    <hr>
+     <!-- <b><i> these tags are also used for bold and italic of letters respectively (but not recommended) use " <strong>" and "em" instead of this- -->
+    <p>Lorem <b>bolding</b>ipsum dolor sit.</p>
+    <p>Lorem, ipsum <i>italic</i></p>
+    <p>Lorem, ipsum.</p>
+    
+ 
+    <!-- vscode shortcut : ctrl+enter to jump into new line      -->
+    <!-- <a> tag for adding links  -->
+    <!-- target="_blank": for open link in new tab -->
+    <a href="https://facebook.com" target="_blank">Go to facebook</a>
+    <br>
+    <a href="https://linkedin.com" target="_blank">Go to linkedin</a>
+    <br>
+    <a href="https://google.com" target="_blank">Go to google</a>
+    <!-- iserting image -->
+    <!-- alt="text" tag is used for showing any text if image is not loading -->
+    <img src="ali.jpg" alt="error loading image" width="" height=""><br>
+    <img src="" alt="remote image">
+
+    <h2><Table>This is table and list form</Table></h2>
+    <!-- Lists -->
+    <ul>
+        <li>This is first item of my ordered list</li>
+     
+        <li>
+            <ul> <!--Conceot of list in list (nested list)-->
+                <li>another one</li>
+                <li>another two</li>
+            </ul>
+        </li> 
+
+        <li>This is the secomd item of my ordered list</li>
+    </ul>
+
+    <ol type="a"> <!--according to choice can write anything in "type" like:roman,abcor 123-->
+        <li>This is first item of my unordered list</li>
+        <li>This is the secomd item of my unordered list</li>
+    </ol>
+
+    <!-- Tables -->
+    <h3>Table</h3>
+    <table>
+        <thead> <!--table head includes main heading-->
+            <tr><!--<tr> tag denoted to rows-->
+                <th>Name</th>
+                <th>Employe id</th>
+                <th>Employee role</th>
+            </tr>
+        </thead>
+        <tbody><!--table body includes -->
+            <tr>
+                <td>Ali</td>
+                <td>3345</td>
+                <td>develpor</td>
+            </tr>
+            <tr>
+                <td>Haider</td>
+                <td>3676</td>
+                <td>programmer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+    
+    <div>
+    Name:<input type="text" name="myName">
+    </div>
+    <!-- you can also write in this way with label tag
+        <label for="name">Name</label>
+    <div>
+    <input type="text" name="myName" id="name">
+    </div> -->
+    <div>
+    Role:<input type="text" name="myRole">
+    </div>
+
+    <div>
+       Email:<input type="email" name="myEmail">
+    </div>
+
+    
+    <div>
+        <input type="date" name="myDate">
+    </div>
+    
+    <div>
+        Are you Eligible<input type="checkbox" name="myEligibility">
+        <!--    if you want box remain  by default checked
+        Are you Eligible<input type="checkbox" name="myEligibility" checked>
+    -->
+    </div>
+    
+    <div>
+        <!-- from these two only one can be selected because both have same names "myGender"-->
+        Gender:Male<input type="radio" name="myGender">Gender:Female<input type="radio" name="myGender">
+    </div>
+     
+    <div>
+        Write about yourself:<br><textarea type="mytext" cols="30" rows="10"></textarea>
+    </div>
+
+   <div>
+        <input type="submit" value="Submit Now">
+    </div>
+
+    <div>
+        <input type="reset" value="Reset Now">
+    </div>
+
+    <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+              <option value="audi">Audi</option>
+              <option value="Grande">Grande</option>
+         <!-- if you want option remain selected by default
+              <option value="audi" selected>Audi</option>
+              <option value="Grande" selected>Grande</option>
+              -->
+        </select>
+    </div>
+</form>
+
+      <h3>Ids and Classes</h3>
+                               <!--multiple classes can assign in this way "class space another class"-->
+      <div id="mainBox" class="redBg blackBorder"> <!--id=identifier. an element can have only one id but an elent can have more than one class-->
+            this is mainBox
+      </div>
+       <span class="redBg"></span>
+      <!-- Emmet -->
+      <!-- span. is for class and span# is for id -->
+      <span class="redBg"></span>
+      <span id="mainBox "></span>
+
+
+      <h3>HTML Entities</h3>
+
+      <div class="container">
+        <p>This is a paragraph</p>
+      </div>
+      <div class="container">
+        <!-- &nbsp is use for spacing -->
+        <p>This is another &nbsp; paragraph with one space</p>
+        <p>This is another &nbsp;&nbsp;paragraph with two space</p>
+         <!-- if we want to write "<p>" means any tag of html then we will use the entity given below before and after tag -->
+        <p>paragraph is written like this &lt;p&gt; </p>
+        <!-- can also use to write the symbols which are not in keyboard from the way given below -->
+        <!-- refrence for search: "html entities refrence" -->
+        <p>pound is written like this &lt;p&gt;</p>
+        <p>copyright is written like this &copy;</p>
+        <p>this is written like this &rAarr;</p>
+
+    </div>
+        <h3>Html Sementic tags</h3>
+        <!-- header footer nav aside etc -->
+        <details>
+                <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit.</summary>Corrupti, at, aperiam veniam sint error possimus inventore suscipit numquam tempore in a consequuntur voluptas deserunt neque aliquam iste <strong>This is strong</strong> pariatur eveniet autem, qui enim minus! Odit modi aperiam, placeat a cumque distinctio. ipsum dolor sit <em>this is emphasized</em> amet consectetur adipisicing elit. Ea, corrupti consequuntur aliquid suscipit quam placeat laudantium maxime magnam temporibus quia? Reiciendis error similique esse quas fugiat. Harum consequuntur laborum nam!</p>
+        </details>
+
+</body>
+</html>
