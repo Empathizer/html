@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+</head>
+<style>
+      .container{
+          width: 790px;
+          border: 3px solid purple;
+          margin:auto;
+      }
+
+      .item{
+          border:3px solid red;
+          margin:6px 3px;
+          padding:2px 3px;
+          background:rgb(201, 178, 178);
+          
+      }
+
+      #fruits{
+        float:left;
+        clear:left;
+        width:450px;
+      }
+
+      #computer{
+        float:left;
+         width: 450px;
+      }
+      #stationary{
+        float: left;
+        width: 450px;
+      }
+      h1{
+          margin:auto;
+          width: 455px;
+      }
+</style>
+<body>
+   
+    <div class="container">
+        <h1 >Welcome to my store</h1>
+        <div id="fruits" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatibus maiores ex obcaecati iste quo porro laboriosam at sit iusto.</p>
+        </div>
+
+        <div id="computer" class="item">
+        <h3>computer</h3>
+        <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus alias architecto repudiandae iure sunt, deserunt itaque eligendi ullam ratione quis!</p>
+        </div>
+
+        <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque obcaecati enim provident saepe aliquam ad quidem perferendis qui cumque alias.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
