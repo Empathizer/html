@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+</head>
+    <style>
+        * {  /*steric is used when we want to point all elements */
+            box-sizing: border-box;
+            margin:0px;
+            padding: 0px;   /*by default margin and padding is zero can change below*/
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(231, 2, 119);
+            /*we can set top bottam left right padding or margin
+            padding-bottom: 13px;*/
+           /* padding: 44px 56px 6px 78px; padding/margin: top right bottom left;*/
+           padding:34px 55px; /*padding: top/bottom left/right*/           
+           margin:11px 11px;
+           border-radius: 23px;
+           width: 66553px;
+          
+        }
+    </style>
+<body>
+     <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti facilis maiores ipsum sit reiciendis. Saepe sapiente eveniet totam laboriosam!</p>
+     </div>
+     <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti facilis maiores ipsum sit reiciendis. Saepe sapiente eveniet totam laboriosam!</p>
+     </div>
+     <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti facilis maiores ipsum sit reiciendis. Saepe sapiente eveniet totam laboriosam!</p>
+     </div>
+</body>
+</html>
